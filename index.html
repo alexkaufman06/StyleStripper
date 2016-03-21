@@ -11,18 +11,26 @@
     <div class="container">
       <h1>Style Stripper</h1>
       <div class="form">
-        <form id="prime-finder">
+        <form id="html-stripper" role="form">
           <div class="form-group">
             <label for="html">Enter your HTML:</label>
-            <input id="html" type="text" class="form-control" required>
+            <textarea id="html" type="text" class="form-control" rows="7" required></textarea>
           </div>
 
           <button type="submit" class="btn btn-success">Remove Styles</button>
         </form>
       </div>
-
-      <div id="result">
-
+      <div id="result" class="row">
+        <div class="col-xs-6">
+          <br/>
+          <p><strong>Orginal HTML:</strong></p>
+          <p><span class="input"></span></p>
+        </div>
+        <div class="col-xs-6">
+          <br/>
+          <p><strong>Stripped HTML:</strong></p>
+          <p><span class="answer"></span></p>
+        </div>
       </div>
     </div>
   </body>
