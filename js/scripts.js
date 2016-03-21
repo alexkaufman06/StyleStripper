@@ -1,7 +1,10 @@
 var removeStyles = function(html) {
   var originalHtml = html;
-  var answer ="test";
-
+  var styleText = 'style="';
+  var styleCount = (originalHtml.match(/style="/g) || []).length;
+  var location = originalHtml.indexOf(styleText);
+  var answer = originalHtml.replace(styleText, '');
+  console.log(styleCount);
   return answer;
 };
 
